@@ -21,7 +21,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: gradle
+          cache: maven
       - name: Build, unit tests and integration tests
         run: |
           chmod +x mvnw
@@ -65,7 +65,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          cache: gradle
+          cache: maven
       - name: Build container image
         run: |
           chmod +x mvnw
